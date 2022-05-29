@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e8ESDvUc51mu5QTepkK3C+FTsiDMes8p0PkyhnQzucyP7f0tAyGs9uPGZffmTUOTR0C1lMkXyjXc16eRz7pStg==",
+  "dgSpecHash": "ObtGL+YpfLtsKN+0+xbdgZVFyrez8YlfznWIhXha7kqSiUHQNQHgKHqkiCNxqi+O/mS+vEnfV1/mL/9XfjQHmQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kylec\\OneDrive - University of South Wales\\Personal Projects\\tarkovAmmo\\tarkovAmmo\\tarkovAmmo.csproj",
+  "projectFilePath": "C:\\Users\\kylec\\OneDrive - University of South Wales\\Personal Projects\\1Github\\Tarkov-Helper\\tarkovAmmo\\tarkovAmmo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kylec\\.nuget\\packages\\materialskin.2\\2.3.1\\materialskin.2.2.3.1.nupkg.sha512",
     "C:\\Users\\kylec\\.nuget\\packages\\metromodernui\\1.4.0\\metromodernui.1.4.0.nupkg.sha512",
