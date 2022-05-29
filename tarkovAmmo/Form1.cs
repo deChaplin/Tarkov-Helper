@@ -125,20 +125,7 @@ namespace tarkovAmmo
         private void Form1_Load(object sender, EventArgs e)
         {
             getUrl(); // calls the url
-
-            // Clears text box
-            lblRDamage.Text = "";
-            lblRPenValue.Text = "";
-            lblRFragChance.Text = "";
-            lblRRecoil.Text = "";
-            lblREffDist.Text = "";
-            lblRMaxHsDist.Text = "";
-            lblRC1.Text = "";
-            lblRC2.Text = "";
-            lblRC3.Text = "";
-            lblRC4.Text = "";
-            lblRC5.Text = "";
-            lblRC6.Text = "";
+            resetForm();
 
             foreach (var item in jsonObject)
             {
@@ -183,6 +170,7 @@ namespace tarkovAmmo
         {
             cboAmmo.Items.Clear();
             allAmmo.Clear();
+            resetForm();
 
 
             string selectedCaliber = cboCalibers.Text;
@@ -226,6 +214,25 @@ namespace tarkovAmmo
 
             groupBox.Text = selectedAmmo;
 
+        }
+
+        void resetForm()
+        {
+            // Clears text box
+            lblRDamage.Text = "";
+            lblRPenValue.Text = "";
+            lblRFragChance.Text = "";
+            lblRRecoil.Text = "";
+            lblREffDist.Text = "";
+            lblRMaxHsDist.Text = "";
+            lblRC1.Text = "";
+            lblRC2.Text = "";
+            lblRC3.Text = "";
+            lblRC4.Text = "";
+            lblRC5.Text = "";
+            lblRC6.Text = "";
+
+            groupBox.Text = "Round";
         }
 
         // Movable window
