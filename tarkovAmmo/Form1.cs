@@ -99,29 +99,6 @@ namespace tarkovAmmo
             Region = System.Drawing.Region.FromHrgn(Win32.CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
 
-        public class Win32
-        {
-            [DllImport("user32.dll")]
-            public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
-
-            [DllImport("user32.dll")]
-            public static extern bool ReleaseCapture();
-
-            [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-            public static extern IntPtr CreateRoundRectRgn
-            (
-                int nLeftRect,     // x-coordinate of upper-left corner
-                int nTopRect,      // y-coordinate of upper-left corner
-                int nRightRect,    // x-coordinate of lower-right corner
-                int nBottomRect,   // y-coordinate of lower-right corner
-                int nWidthEllipse, // width of ellipse
-                int nHeightEllipse // height of ellipse
-            );
-        }
-
-        public const int WM_NCLBUTTONDOWN = 0xA1;
-        public const int HT_CAPTION = 0x2;
-
         private void Form1_Load(object sender, EventArgs e)
         {
             getUrl(); // calls the url
@@ -239,13 +216,13 @@ namespace tarkovAmmo
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
             Win32.ReleaseCapture();
-            Win32.SendMessage(this.Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            Win32.SendMessage(this.Handle, tarkovAmmo.Win32.WM_NCLBUTTONDOWN, tarkovAmmo.Win32.HT_CAPTION, 0);
         }
 
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
             Win32.ReleaseCapture();
-            Win32.SendMessage(this.Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            Win32.SendMessage(this.Handle, tarkovAmmo.Win32.WM_NCLBUTTONDOWN, tarkovAmmo.Win32.HT_CAPTION, 0);
         }
 
         // Closing and minimising window

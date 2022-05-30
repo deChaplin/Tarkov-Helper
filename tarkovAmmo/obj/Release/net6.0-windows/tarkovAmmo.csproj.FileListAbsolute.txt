@@ -22,3 +22,4 @@ C:\Users\kylec\OneDrive - University of South Wales\Personal Projects\1Github\Ta
 C:\Users\kylec\OneDrive - University of South Wales\Personal Projects\1Github\Tarkov-Helper\tarkovAmmo\obj\Release\net6.0-windows\tarkovAmmo.pdb
 C:\Users\kylec\OneDrive - University of South Wales\Personal Projects\1Github\Tarkov-Helper\tarkovAmmo\obj\Release\net6.0-windows\tarkovAmmo.genruntimeconfig.cache
 C:\Users\kylec\OneDrive - University of South Wales\Personal Projects\1Github\Tarkov-Helper\tarkovAmmo\obj\Release\net6.0-windows\ref\tarkovAmmo.dll
+C:\Users\kylec\OneDrive - University of South Wales\Personal Projects\1Github\Tarkov-Helper\tarkovAmmo\obj\Release\net6.0-windows\tarkovAmmo.MainMenuForm.resources
