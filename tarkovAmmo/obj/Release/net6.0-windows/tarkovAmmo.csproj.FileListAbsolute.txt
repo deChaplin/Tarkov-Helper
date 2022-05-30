@@ -27,3 +27,4 @@ C:\Users\kylec\OneDrive - University of South Wales\Personal Projects\1Github\Ta
 C:\Users\kylec\OneDrive - University of South Wales\Personal Projects\1Github\Tarkov-Helper\tarkovAmmo\obj\Release\net6.0-windows\tarkovAmmo.FormTasks.resources
 C:\Users\kylec\OneDrive - University of South Wales\Personal Projects\1Github\Tarkov-Helper\tarkovAmmo\obj\Release\net6.0-windows\tarkovAmmo.FormFlea.resources
 C:\Users\kylec\OneDrive - University of South Wales\Personal Projects\1Github\Tarkov-Helper\tarkovAmmo\obj\Release\net6.0-windows\tarkovAmmo.FormTraders.resources
+C:\Users\kylec\OneDrive - University of South Wales\Personal Projects\1Github\Tarkov-Helper\tarkovAmmo\obj\Release\net6.0-windows\tarkovAmmo.FormPatchNotes.resources

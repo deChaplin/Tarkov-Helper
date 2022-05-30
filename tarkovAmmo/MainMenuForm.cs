@@ -20,6 +20,12 @@ namespace tarkovAmmo
 {
     public partial class MainMenuForm : Form
     {
+        Form fTraders;
+        Form fAmmo;
+        Form fTasks;
+        Form fFlea;
+        Form fPatch;
+
         public MainMenuForm()
         {
             InitializeComponent();
@@ -37,6 +43,13 @@ namespace tarkovAmmo
         private void MainMenuForm_Load(object sender, EventArgs e)
         {
             // << Creating the forms >>
+
+            // Traders form
+            fPatch = new FormPatchNotes();
+            fPatch.TopLevel = false;
+            fPatch.Dock = DockStyle.Fill;
+            this.pnlMain.Controls.Add(fPatch);
+            this.pnlMain.Tag = fPatch;
 
             // Traders form
             fTraders = new FormTraders();
@@ -57,6 +70,7 @@ namespace tarkovAmmo
 
             // Hiding the forms by default
             hideAll();
+            fPatch.Show();
         }
 
         // Movable window
@@ -65,13 +79,11 @@ namespace tarkovAmmo
             Win32.ReleaseCapture();
             Win32.SendMessage(this.Handle, tarkovAmmo.Win32.WM_NCLBUTTONDOWN, tarkovAmmo.Win32.HT_CAPTION, 0);
         }
-
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
             Win32.ReleaseCapture();
             Win32.SendMessage(this.Handle, tarkovAmmo.Win32.WM_NCLBUTTONDOWN, tarkovAmmo.Win32.HT_CAPTION, 0);
         }
-
         // Closing window
         private void btnClose_Click(object sender, EventArgs e)
         {
@@ -82,7 +94,6 @@ namespace tarkovAmmo
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
         // Show panels
         private void btnTraders_Click(object sender, EventArgs e)
         {
@@ -136,26 +147,13 @@ namespace tarkovAmmo
             this.pnlMain.Tag = fFlea;
             fFlea.Show();
         }
-
-        public enum FormTab
-        {
-            Traders,
-            Ammo,
-            Tasks,
-            Flea
-        }
-
-        Form fTraders;
-        Form fAmmo;
-        Form fTasks;
-        Form fFlea;
-
         private void hideAll()
         {
             fTraders.Hide();
             fAmmo.Hide();
             fTasks.Hide();
             fFlea.Hide();
+            fPatch.Hide();
         }
     }
 }
