@@ -97,10 +97,7 @@ namespace tarkovAmmo
         // Show panels
         private void btnTraders_Click(object sender, EventArgs e)
         {
-            btnAmmo.Enabled = true;
-            btnFlea.Enabled = true;
-            btnTasks.Enabled = true;
-            btnTraders.Enabled = false;
+            setTabDisabled(Tabs.Traders);
 
             hideAll();
 
@@ -110,10 +107,7 @@ namespace tarkovAmmo
         }
         private void btnAmmo_Click(object sender, EventArgs e)
         {
-            btnAmmo.Enabled = false;
-            btnFlea.Enabled = true;
-            btnTasks.Enabled = true;
-            btnTraders.Enabled = true;
+            setTabDisabled(Tabs.Ammo);
 
             hideAll();
 
@@ -123,10 +117,7 @@ namespace tarkovAmmo
         }
         private void btnTasks_Click(object sender, EventArgs e)
         {
-            btnAmmo.Enabled = true;
-            btnFlea.Enabled = true;
-            btnTasks.Enabled = false;
-            btnTraders.Enabled = true;
+            setTabDisabled(Tabs.Tasks);
 
             hideAll();
 
@@ -136,10 +127,7 @@ namespace tarkovAmmo
         }
         private void btnFlea_Click(object sender, EventArgs e)
         {
-            btnAmmo.Enabled = true;
-            btnFlea.Enabled = false;
-            btnTasks.Enabled = true;
-            btnTraders.Enabled = true;
+            setTabDisabled(Tabs.Flea);
 
             hideAll();
 
@@ -147,6 +135,41 @@ namespace tarkovAmmo
             this.pnlMain.Tag = fFlea;
             fFlea.Show();
         }
+
+        private enum Tabs
+        {
+            Ammo,
+            Flea,
+            Tasks,
+            Traders
+        }
+
+        private void setTabDisabled(Tabs tb)
+        {
+            btnAmmo.Enabled = true;
+            btnFlea.Enabled = true;
+            btnTasks.Enabled = true;
+            btnTraders.Enabled = true;
+
+            switch (tb)
+            {
+                case Tabs.Ammo:
+                    btnAmmo.Enabled = false;
+                    break;
+                case Tabs.Flea:
+                    btnFlea.Enabled = false;
+                    break;
+                case Tabs.Tasks:
+                    btnTasks.Enabled = false;
+                    break;
+                case Tabs.Traders:
+                    btnTraders.Enabled = false;
+                    break;
+                default:
+                    break;
+            }
+        }
+
         private void hideAll()
         {
             fTraders.Hide();
