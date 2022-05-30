@@ -47,7 +47,7 @@
             this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMin.ForeColor = System.Drawing.Color.White;
-            this.btnMin.Location = new System.Drawing.Point(736, 8);
+            this.btnMin.Location = new System.Drawing.Point(991, 9);
             this.btnMin.Name = "btnMin";
             this.btnMin.Size = new System.Drawing.Size(24, 31);
             this.btnMin.TabIndex = 42;
@@ -62,7 +62,7 @@
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(766, 8);
+            this.btnClose.Location = new System.Drawing.Point(1021, 9);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(24, 31);
             this.btnClose.TabIndex = 41;
@@ -75,7 +75,7 @@
             this.pictureBox1.Image = global::tarkovAmmo.Properties.Resources.rainbow;
             this.pictureBox1.Location = new System.Drawing.Point(-4, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(809, 5);
+            this.pictureBox1.Size = new System.Drawing.Size(1059, 5);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 40;
             this.pictureBox1.TabStop = false;
@@ -96,9 +96,9 @@
             this.btnTraders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTraders.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.btnTraders.ForeColor = System.Drawing.Color.White;
-            this.btnTraders.Location = new System.Drawing.Point(3, 44);
+            this.btnTraders.Location = new System.Drawing.Point(3, 43);
             this.btnTraders.Name = "btnTraders";
-            this.btnTraders.Size = new System.Drawing.Size(188, 96);
+            this.btnTraders.Size = new System.Drawing.Size(188, 111);
             this.btnTraders.TabIndex = 49;
             this.btnTraders.Text = "Traders";
             this.btnTraders.TextColor = System.Drawing.Color.White;
@@ -120,9 +120,9 @@
             this.btnAmmo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAmmo.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.btnAmmo.ForeColor = System.Drawing.Color.White;
-            this.btnAmmo.Location = new System.Drawing.Point(3, 146);
+            this.btnAmmo.Location = new System.Drawing.Point(3, 161);
             this.btnAmmo.Name = "btnAmmo";
-            this.btnAmmo.Size = new System.Drawing.Size(188, 96);
+            this.btnAmmo.Size = new System.Drawing.Size(188, 111);
             this.btnAmmo.TabIndex = 50;
             this.btnAmmo.Text = "Ammo";
             this.btnAmmo.TextColor = System.Drawing.Color.White;
@@ -144,9 +144,9 @@
             this.btnTasks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTasks.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.btnTasks.ForeColor = System.Drawing.Color.White;
-            this.btnTasks.Location = new System.Drawing.Point(3, 248);
+            this.btnTasks.Location = new System.Drawing.Point(3, 278);
             this.btnTasks.Name = "btnTasks";
-            this.btnTasks.Size = new System.Drawing.Size(188, 96);
+            this.btnTasks.Size = new System.Drawing.Size(188, 111);
             this.btnTasks.TabIndex = 51;
             this.btnTasks.Text = "Tasks";
             this.btnTasks.TextColor = System.Drawing.Color.White;
@@ -168,9 +168,9 @@
             this.btnFlea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFlea.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.btnFlea.ForeColor = System.Drawing.Color.White;
-            this.btnFlea.Location = new System.Drawing.Point(3, 350);
+            this.btnFlea.Location = new System.Drawing.Point(3, 395);
             this.btnFlea.Name = "btnFlea";
-            this.btnFlea.Size = new System.Drawing.Size(188, 96);
+            this.btnFlea.Size = new System.Drawing.Size(188, 111);
             this.btnFlea.TabIndex = 52;
             this.btnFlea.Text = "Flea";
             this.btnFlea.TextColor = System.Drawing.Color.White;
@@ -193,7 +193,7 @@
             this.roundedButtons5.ForeColor = System.Drawing.Color.White;
             this.roundedButtons5.Location = new System.Drawing.Point(197, 43);
             this.roundedButtons5.Name = "roundedButtons5";
-            this.roundedButtons5.Size = new System.Drawing.Size(597, 402);
+            this.roundedButtons5.Size = new System.Drawing.Size(848, 463);
             this.roundedButtons5.TabIndex = 53;
             this.roundedButtons5.TextColor = System.Drawing.Color.White;
             this.roundedButtons5.UseVisualStyleBackColor = false;
@@ -203,7 +203,7 @@
             this.pnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.pnlMain.Location = new System.Drawing.Point(203, 51);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(586, 389);
+            this.pnlMain.Size = new System.Drawing.Size(833, 449);
             this.pnlMain.TabIndex = 55;
             // 
             // MainMenuForm
@@ -211,7 +211,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.ClientSize = new System.Drawing.Size(800, 451);
+            this.ClientSize = new System.Drawing.Size(1048, 512);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.roundedButtons5);
             this.Controls.Add(this.btnFlea);

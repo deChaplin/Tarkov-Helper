@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ahmed Patel\\Desktop\\Tarkov Helper\\Tarkov-Helper\\tarkovAmmo\\tarkovAmmo.csproj": {}
+    "C:\\Users\\kylec\\OneDrive - University of South Wales\\Personal Projects\\1Github\\Tarkov-Helper\\tarkovAmmo\\tarkovAmmo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ahmed Patel\\Desktop\\Tarkov Helper\\Tarkov-Helper\\tarkovAmmo\\tarkovAmmo.csproj": {
+    "C:\\Users\\kylec\\OneDrive - University of South Wales\\Personal Projects\\1Github\\Tarkov-Helper\\tarkovAmmo\\tarkovAmmo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ahmed Patel\\Desktop\\Tarkov Helper\\Tarkov-Helper\\tarkovAmmo\\tarkovAmmo.csproj",
+        "projectUniqueName": "C:\\Users\\kylec\\OneDrive - University of South Wales\\Personal Projects\\1Github\\Tarkov-Helper\\tarkovAmmo\\tarkovAmmo.csproj",
         "projectName": "tarkovAmmo",
-        "projectPath": "C:\\Users\\Ahmed Patel\\Desktop\\Tarkov Helper\\Tarkov-Helper\\tarkovAmmo\\tarkovAmmo.csproj",
-        "packagesPath": "C:\\Users\\Ahmed Patel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ahmed Patel\\Desktop\\Tarkov Helper\\Tarkov-Helper\\tarkovAmmo\\obj\\",
+        "projectPath": "C:\\Users\\kylec\\OneDrive - University of South Wales\\Personal Projects\\1Github\\Tarkov-Helper\\tarkovAmmo\\tarkovAmmo.csproj",
+        "packagesPath": "C:\\Users\\kylec\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kylec\\OneDrive - University of South Wales\\Personal Projects\\1Github\\Tarkov-Helper\\tarkovAmmo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ahmed Patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kylec\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -75,7 +75,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
