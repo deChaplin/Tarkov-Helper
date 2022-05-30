@@ -114,98 +114,79 @@ namespace tarkovAmmo
         // Show panels
         private void btnTraders_Click(object sender, EventArgs e)
         {
-            tradersShow();
-            ammoHide();
-            tasksHide();
-            fleaHide();
+            
         }
         private void btnAmmo_Click(object sender, EventArgs e)
         {
-            //loadForm(new Form1());
-
-            //ammoShow();
-            //fleaHide();
-            //tradersHide();
-            //tasksHide();
+            loadForm(new FormAmmo(), FormTab.Ammo);
         }
 
-        /*public void loadForm(object Form)
+        public enum FormTab
         {
-            if (this.pnlAmmo.Controls.Count > 0)
+            Traders,
+            Ammo,
+            Tasks,
+            Flea
+        }
+
+        Form fTraders;
+        Form fAmmo;
+        Form fTasks;
+        Form fFlea;
+
+        Form f;
+        public void loadForm(object Form, FormTab ft)
+        {
+            Form f = null;
+
+            switch (ft)
             {
-                this.pnlAmmo.Controls.RemoveAt(0);
+                case FormTab.Traders:
+                    f = fTraders;
+                    break;
+                case FormTab.Ammo:
+                    f = fAmmo;
+                    break;
+                case FormTab.Tasks:
+                    f = fTasks;
+                    break;
+                case FormTab.Flea:
+                    f = fFlea;
+                    break;
+                default:
+                    break;
             }
-            Form f = Form as Form;
-            f.TopLevel = false;
-            f.Dock = DockStyle.Fill;
-            this.pnlAmmo.Controls.Add(f);
-            this.pnlAmmo.Tag = f;
-            f.Show();
-        }*/
+
+            if (f == null)
+            {
+                if (this.pnlMain.Controls.Count > 0)
+                {
+                    this.pnlMain.Controls.RemoveAt(0);
+                }
+                f = Form as Form;
+                f.TopLevel = false;
+                f.Dock = DockStyle.Fill;
+                this.pnlMain.Controls.Add(f);
+                this.pnlMain.Tag = f;
+                f.Show();
+            }
+            else
+            { 
+                f.Show();
+            }
+        }
 
         private void btnTasks_Click(object sender, EventArgs e)
         {
-            tasksShow();
-            ammoHide();
-            tradersHide();
-            fleaHide();
+            loadForm(new FormTasks(), FormTab.Tasks);
         }
         private void btnFlea_Click(object sender, EventArgs e)
-        {
-            fleaShow();
-            ammoHide();
-            tradersHide();
-            tasksHide();
+        { 
+
         }
 
-        private void ammoShow()
-        {
-            pnlAmmo.Visible = true;
-            pnlAmmo.Enabled = true;
-            btnAmmo.Enabled = false;
-        }
-        private void ammoHide()
-        {
-            pnlAmmo.Visible = false;
-            pnlAmmo.Enabled = false;
-            btnAmmo.Enabled = true;
-        }
-        private void fleaShow()
-        {
-            pnlFlea.Visible = true;
-            pnlFlea.Enabled = true;
-            btnFlea.Enabled = false;
-        }
-        private void fleaHide()
-        {
-            pnlFlea.Visible = false;
-            pnlFlea.Enabled = false;
-            btnFlea.Enabled = true;
-        }
-        private void tradersShow()
-        {
-            pnlTraders.Visible = true;
-            pnlTraders.Enabled = true;
-            btnTraders.Enabled = false;
-        }
-        private void tradersHide()
-        {
-            pnlTraders.Visible = false;
-            pnlTraders.Enabled = false;
-            btnTraders.Enabled = true;
-        }
-        private void tasksShow()
-        {
-            pnlTasks.Visible = true;
-            pnlTasks.Enabled = true;
-            btnTasks.Enabled = false;
-        }
-        private void tasksHide()
-        {
-            pnlTasks.Visible = false;
-            pnlTasks.Enabled = false;
-            btnTasks.Enabled = true;
-        }
+
+
 
         // << Below here is the ammo shit >>
 
@@ -337,6 +318,11 @@ namespace tarkovAmmo
             lblRC5.Text = "";
             lblRC6.Text = "";
             groupBox.Text = "Round";
+        }
+
+        private void roundedButtons1_Click(object sender, EventArgs e)
+        {
+            f.Hide();
         }
     }
 }

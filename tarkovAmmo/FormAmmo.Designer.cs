@@ -1,6 +1,6 @@
 ﻿namespace tarkovAmmo
 {
-    partial class MainMenuForm
+    partial class FormAmmo
     {
         /// <summary>
         /// Required designer variable.
@@ -28,15 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnMin = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnTraders = new tarkovAmmo.RoundedButtons();
-            this.btnAmmo = new tarkovAmmo.RoundedButtons();
-            this.btnTasks = new tarkovAmmo.RoundedButtons();
-            this.btnFlea = new tarkovAmmo.RoundedButtons();
-            this.roundedButtons5 = new tarkovAmmo.RoundedButtons();
-            this.pnlAmmo = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cboAmmo = new MaterialSkin.Controls.MaterialComboBox();
@@ -66,194 +57,19 @@
             this.lblRecoil = new System.Windows.Forms.Label();
             this.lblPenValue = new System.Windows.Forms.Label();
             this.lblDamge = new System.Windows.Forms.Label();
-            this.pnlMain = new System.Windows.Forms.Panel();
-            this.roundedButtons1 = new tarkovAmmo.RoundedButtons();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.pnlAmmo.SuspendLayout();
             this.groupBox.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnMin
-            // 
-            this.btnMin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMin.FlatAppearance.BorderSize = 0;
-            this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMin.ForeColor = System.Drawing.Color.White;
-            this.btnMin.Location = new System.Drawing.Point(736, 8);
-            this.btnMin.Name = "btnMin";
-            this.btnMin.Size = new System.Drawing.Size(24, 31);
-            this.btnMin.TabIndex = 42;
-            this.btnMin.Text = "—";
-            this.btnMin.UseVisualStyleBackColor = true;
-            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(766, 8);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(24, 31);
-            this.btnClose.TabIndex = 41;
-            this.btnClose.Text = "✕";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::tarkovAmmo.Properties.Resources.rainbow;
-            this.pictureBox1.Location = new System.Drawing.Point(-4, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(809, 5);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 40;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
-            // 
-            // btnTraders
-            // 
-            this.btnTraders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.btnTraders.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.btnTraders.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnTraders.BorderColor1 = System.Drawing.Color.PaleVioletRed;
-            this.btnTraders.BorderRadius = 8;
-            this.btnTraders.BorderRadius1 = 8;
-            this.btnTraders.BorderSize = 0;
-            this.btnTraders.BorderSize1 = 0;
-            this.btnTraders.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTraders.FlatAppearance.BorderSize = 0;
-            this.btnTraders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTraders.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-            this.btnTraders.ForeColor = System.Drawing.Color.White;
-            this.btnTraders.Location = new System.Drawing.Point(3, 44);
-            this.btnTraders.Name = "btnTraders";
-            this.btnTraders.Size = new System.Drawing.Size(188, 96);
-            this.btnTraders.TabIndex = 49;
-            this.btnTraders.Text = "Traders";
-            this.btnTraders.TextColor = System.Drawing.Color.White;
-            this.btnTraders.UseVisualStyleBackColor = false;
-            this.btnTraders.Click += new System.EventHandler(this.btnTraders_Click);
-            // 
-            // btnAmmo
-            // 
-            this.btnAmmo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.btnAmmo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.btnAmmo.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnAmmo.BorderColor1 = System.Drawing.Color.PaleVioletRed;
-            this.btnAmmo.BorderRadius = 8;
-            this.btnAmmo.BorderRadius1 = 8;
-            this.btnAmmo.BorderSize = 0;
-            this.btnAmmo.BorderSize1 = 0;
-            this.btnAmmo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAmmo.FlatAppearance.BorderSize = 0;
-            this.btnAmmo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAmmo.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-            this.btnAmmo.ForeColor = System.Drawing.Color.White;
-            this.btnAmmo.Location = new System.Drawing.Point(3, 146);
-            this.btnAmmo.Name = "btnAmmo";
-            this.btnAmmo.Size = new System.Drawing.Size(188, 96);
-            this.btnAmmo.TabIndex = 50;
-            this.btnAmmo.Text = "Ammo";
-            this.btnAmmo.TextColor = System.Drawing.Color.White;
-            this.btnAmmo.UseVisualStyleBackColor = false;
-            this.btnAmmo.Click += new System.EventHandler(this.btnAmmo_Click);
-            // 
-            // btnTasks
-            // 
-            this.btnTasks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.btnTasks.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.btnTasks.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnTasks.BorderColor1 = System.Drawing.Color.PaleVioletRed;
-            this.btnTasks.BorderRadius = 8;
-            this.btnTasks.BorderRadius1 = 8;
-            this.btnTasks.BorderSize = 0;
-            this.btnTasks.BorderSize1 = 0;
-            this.btnTasks.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTasks.FlatAppearance.BorderSize = 0;
-            this.btnTasks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTasks.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-            this.btnTasks.ForeColor = System.Drawing.Color.White;
-            this.btnTasks.Location = new System.Drawing.Point(3, 248);
-            this.btnTasks.Name = "btnTasks";
-            this.btnTasks.Size = new System.Drawing.Size(188, 96);
-            this.btnTasks.TabIndex = 51;
-            this.btnTasks.Text = "Tasks";
-            this.btnTasks.TextColor = System.Drawing.Color.White;
-            this.btnTasks.UseVisualStyleBackColor = false;
-            this.btnTasks.Click += new System.EventHandler(this.btnTasks_Click);
-            // 
-            // btnFlea
-            // 
-            this.btnFlea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.btnFlea.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.btnFlea.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnFlea.BorderColor1 = System.Drawing.Color.PaleVioletRed;
-            this.btnFlea.BorderRadius = 8;
-            this.btnFlea.BorderRadius1 = 8;
-            this.btnFlea.BorderSize = 0;
-            this.btnFlea.BorderSize1 = 0;
-            this.btnFlea.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFlea.FlatAppearance.BorderSize = 0;
-            this.btnFlea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFlea.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-            this.btnFlea.ForeColor = System.Drawing.Color.White;
-            this.btnFlea.Location = new System.Drawing.Point(3, 350);
-            this.btnFlea.Name = "btnFlea";
-            this.btnFlea.Size = new System.Drawing.Size(188, 96);
-            this.btnFlea.TabIndex = 52;
-            this.btnFlea.Text = "Flea";
-            this.btnFlea.TextColor = System.Drawing.Color.White;
-            this.btnFlea.UseVisualStyleBackColor = false;
-            this.btnFlea.Click += new System.EventHandler(this.btnFlea_Click);
-            // 
-            // roundedButtons5
-            // 
-            this.roundedButtons5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.roundedButtons5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.roundedButtons5.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundedButtons5.BorderColor1 = System.Drawing.Color.PaleVioletRed;
-            this.roundedButtons5.BorderRadius = 8;
-            this.roundedButtons5.BorderRadius1 = 8;
-            this.roundedButtons5.BorderSize = 0;
-            this.roundedButtons5.BorderSize1 = 0;
-            this.roundedButtons5.Enabled = false;
-            this.roundedButtons5.FlatAppearance.BorderSize = 0;
-            this.roundedButtons5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButtons5.ForeColor = System.Drawing.Color.White;
-            this.roundedButtons5.Location = new System.Drawing.Point(197, 43);
-            this.roundedButtons5.Name = "roundedButtons5";
-            this.roundedButtons5.Size = new System.Drawing.Size(597, 402);
-            this.roundedButtons5.TabIndex = 53;
-            this.roundedButtons5.TextColor = System.Drawing.Color.White;
-            this.roundedButtons5.UseVisualStyleBackColor = false;
-            // 
-            // pnlAmmo
-            // 
-            this.pnlAmmo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.pnlAmmo.Controls.Add(this.label2);
-            this.pnlAmmo.Controls.Add(this.label1);
-            this.pnlAmmo.Controls.Add(this.cboAmmo);
-            this.pnlAmmo.Controls.Add(this.cboCalibers);
-            this.pnlAmmo.Controls.Add(this.groupBox);
-            this.pnlAmmo.Location = new System.Drawing.Point(809, 44);
-            this.pnlAmmo.Name = "pnlAmmo";
-            this.pnlAmmo.Size = new System.Drawing.Size(586, 389);
-            this.pnlAmmo.TabIndex = 54;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(15, 84);
+            this.label2.Location = new System.Drawing.Point(12, 83);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label2.Size = new System.Drawing.Size(69, 28);
-            this.label2.TabIndex = 48;
+            this.label2.TabIndex = 53;
             this.label2.Text = "Round";
             // 
             // label1
@@ -261,11 +77,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(15, 25);
+            this.label1.Location = new System.Drawing.Point(12, 24);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label1.Size = new System.Drawing.Size(73, 28);
-            this.label1.TabIndex = 45;
+            this.label1.TabIndex = 50;
             this.label1.Text = "Caliber";
             // 
             // cboAmmo
@@ -282,14 +98,13 @@
             this.cboAmmo.FormattingEnabled = true;
             this.cboAmmo.IntegralHeight = false;
             this.cboAmmo.ItemHeight = 43;
-            this.cboAmmo.Location = new System.Drawing.Point(106, 74);
+            this.cboAmmo.Location = new System.Drawing.Point(103, 73);
             this.cboAmmo.MaxDropDownItems = 4;
             this.cboAmmo.MouseState = MaterialSkin.MouseState.OUT;
             this.cboAmmo.Name = "cboAmmo";
             this.cboAmmo.Size = new System.Drawing.Size(166, 49);
             this.cboAmmo.StartIndex = 0;
-            this.cboAmmo.TabIndex = 47;
-            this.cboAmmo.TextChanged += new System.EventHandler(this.cboAmmo_TextChanged);
+            this.cboAmmo.TabIndex = 52;
             // 
             // cboCalibers
             // 
@@ -305,14 +120,13 @@
             this.cboCalibers.FormattingEnabled = true;
             this.cboCalibers.IntegralHeight = false;
             this.cboCalibers.ItemHeight = 43;
-            this.cboCalibers.Location = new System.Drawing.Point(106, 13);
+            this.cboCalibers.Location = new System.Drawing.Point(103, 12);
             this.cboCalibers.MaxDropDownItems = 4;
             this.cboCalibers.MouseState = MaterialSkin.MouseState.OUT;
             this.cboCalibers.Name = "cboCalibers";
             this.cboCalibers.Size = new System.Drawing.Size(166, 49);
             this.cboCalibers.StartIndex = 0;
-            this.cboCalibers.TabIndex = 46;
-            this.cboCalibers.TextChanged += new System.EventHandler(this.cboCalibers_TextChanged);
+            this.cboCalibers.TabIndex = 51;
             // 
             // groupBox
             // 
@@ -341,10 +155,10 @@
             this.groupBox.Controls.Add(this.lblPenValue);
             this.groupBox.Controls.Add(this.lblDamge);
             this.groupBox.ForeColor = System.Drawing.Color.White;
-            this.groupBox.Location = new System.Drawing.Point(320, 8);
+            this.groupBox.Location = new System.Drawing.Point(317, 7);
             this.groupBox.Name = "groupBox";
             this.groupBox.Size = new System.Drawing.Size(237, 368);
-            this.groupBox.TabIndex = 44;
+            this.groupBox.TabIndex = 49;
             this.groupBox.TabStop = false;
             this.groupBox.Text = "Round";
             // 
@@ -624,79 +438,30 @@
             this.lblDamge.TabIndex = 0;
             this.lblDamge.Text = "Damage";
             // 
-            // pnlMain
-            // 
-            this.pnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.pnlMain.Location = new System.Drawing.Point(203, 51);
-            this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(586, 389);
-            this.pnlMain.TabIndex = 55;
-            // 
-            // roundedButtons1
-            // 
-            this.roundedButtons1.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.roundedButtons1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.roundedButtons1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundedButtons1.BorderColor1 = System.Drawing.Color.PaleVioletRed;
-            this.roundedButtons1.BorderRadius = 0;
-            this.roundedButtons1.BorderRadius1 = 0;
-            this.roundedButtons1.BorderSize = 0;
-            this.roundedButtons1.BorderSize1 = 0;
-            this.roundedButtons1.FlatAppearance.BorderSize = 0;
-            this.roundedButtons1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButtons1.ForeColor = System.Drawing.Color.White;
-            this.roundedButtons1.Location = new System.Drawing.Point(215, 538);
-            this.roundedButtons1.Name = "roundedButtons1";
-            this.roundedButtons1.Size = new System.Drawing.Size(150, 40);
-            this.roundedButtons1.TabIndex = 57;
-            this.roundedButtons1.Text = "roundedButtons1";
-            this.roundedButtons1.TextColor = System.Drawing.Color.White;
-            this.roundedButtons1.UseVisualStyleBackColor = false;
-            this.roundedButtons1.Click += new System.EventHandler(this.roundedButtons1_Click);
-            // 
-            // MainMenuForm
+            // FormAmmo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.ClientSize = new System.Drawing.Size(1833, 1026);
-            this.Controls.Add(this.roundedButtons1);
-            this.Controls.Add(this.pnlMain);
-            this.Controls.Add(this.pnlAmmo);
-            this.Controls.Add(this.roundedButtons5);
-            this.Controls.Add(this.btnFlea);
-            this.Controls.Add(this.btnTasks);
-            this.Controls.Add(this.btnAmmo);
-            this.Controls.Add(this.btnTraders);
-            this.Controls.Add(this.btnMin);
-            this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.pictureBox1);
-            this.ForeColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(565, 384);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cboAmmo);
+            this.Controls.Add(this.cboCalibers);
+            this.Controls.Add(this.groupBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "MainMenuForm";
-            this.Text = "MainMenuForm";
-            this.Load += new System.EventHandler(this.MainMenuForm_Load);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.pnlAmmo.ResumeLayout(false);
-            this.pnlAmmo.PerformLayout();
+            this.Name = "FormAmmo";
+            this.Text = "FormAmmo";
+            this.Load += new System.EventHandler(this.FormAmmo_Load);
             this.groupBox.ResumeLayout(false);
             this.groupBox.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private Button btnMin;
-        private Button btnClose;
-        private PictureBox pictureBox1;
-        private RoundedButtons btnTraders;
-        private RoundedButtons btnAmmo;
-        private RoundedButtons btnTasks;
-        private RoundedButtons btnFlea;
-        private RoundedButtons roundedButtons5;
-        private Panel pnlAmmo;
         private Label label2;
         private Label label1;
         private MaterialSkin.Controls.MaterialComboBox cboAmmo;
@@ -726,7 +491,5 @@
         private Label lblRecoil;
         private Label lblPenValue;
         private Label lblDamge;
-        private Panel pnlMain;
-        private RoundedButtons roundedButtons1;
     }
 }
