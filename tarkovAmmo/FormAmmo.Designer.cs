@@ -105,6 +105,7 @@
             this.cboAmmo.Size = new System.Drawing.Size(166, 49);
             this.cboAmmo.StartIndex = 0;
             this.cboAmmo.TabIndex = 52;
+            this.cboAmmo.TextChanged += new System.EventHandler(this.cboAmmo_TextChanged);
             // 
             // cboCalibers
             // 
@@ -127,6 +128,7 @@
             this.cboCalibers.Size = new System.Drawing.Size(166, 49);
             this.cboCalibers.StartIndex = 0;
             this.cboCalibers.TabIndex = 51;
+            this.cboCalibers.TextChanged += new System.EventHandler(this.cboCalibers_TextChanged);
             // 
             // groupBox
             // 
@@ -442,7 +444,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(565, 384);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

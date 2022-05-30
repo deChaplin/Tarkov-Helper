@@ -37,7 +37,6 @@
             this.btnFlea = new tarkovAmmo.RoundedButtons();
             this.roundedButtons5 = new tarkovAmmo.RoundedButtons();
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.roundedButtons1 = new tarkovAmmo.RoundedButtons();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -207,35 +206,12 @@
             this.pnlMain.Size = new System.Drawing.Size(586, 389);
             this.pnlMain.TabIndex = 55;
             // 
-            // roundedButtons1
-            // 
-            this.roundedButtons1.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.roundedButtons1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.roundedButtons1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundedButtons1.BorderColor1 = System.Drawing.Color.PaleVioletRed;
-            this.roundedButtons1.BorderRadius = 0;
-            this.roundedButtons1.BorderRadius1 = 0;
-            this.roundedButtons1.BorderSize = 0;
-            this.roundedButtons1.BorderSize1 = 0;
-            this.roundedButtons1.FlatAppearance.BorderSize = 0;
-            this.roundedButtons1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButtons1.ForeColor = System.Drawing.Color.White;
-            this.roundedButtons1.Location = new System.Drawing.Point(21, 8);
-            this.roundedButtons1.Name = "roundedButtons1";
-            this.roundedButtons1.Size = new System.Drawing.Size(150, 40);
-            this.roundedButtons1.TabIndex = 57;
-            this.roundedButtons1.Text = "roundedButtons1";
-            this.roundedButtons1.TextColor = System.Drawing.Color.White;
-            this.roundedButtons1.UseVisualStyleBackColor = false;
-            this.roundedButtons1.Click += new System.EventHandler(this.roundedButtons1_Click);
-            // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(800, 451);
-            this.Controls.Add(this.roundedButtons1);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.roundedButtons5);
             this.Controls.Add(this.btnFlea);
@@ -267,6 +243,5 @@
         private RoundedButtons btnFlea;
         private RoundedButtons roundedButtons5;
         private Panel pnlMain;
-        private RoundedButtons roundedButtons1;
     }
 }

@@ -36,7 +36,27 @@ namespace tarkovAmmo
 
         private void MainMenuForm_Load(object sender, EventArgs e)
         {
+            // << Creating the forms >>
 
+            // Traders form
+            fTraders = new FormTraders();
+            fTraders.TopLevel = false;
+            fTraders.Dock = DockStyle.Fill;
+            // Flea form
+            fFlea = new FormFlea();
+            fFlea.TopLevel = false;
+            fFlea.Dock = DockStyle.Fill;
+            // Tasks form
+            fTasks = new FormTasks();
+            fTasks.TopLevel = false;
+            fTasks.Dock = DockStyle.Fill;
+            // Ammo form
+            fAmmo = new FormAmmo();
+            fAmmo.TopLevel = false;
+            fAmmo.Dock = DockStyle.Fill;
+
+            // Hiding the forms by default
+            hideAll();
         }
 
         // Movable window
@@ -52,12 +72,12 @@ namespace tarkovAmmo
             Win32.SendMessage(this.Handle, tarkovAmmo.Win32.WM_NCLBUTTONDOWN, tarkovAmmo.Win32.HT_CAPTION, 0);
         }
 
-        // Closing and minimising window
+        // Closing window
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
+        // Minimising window
         private void btnMin_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -66,11 +86,55 @@ namespace tarkovAmmo
         // Show panels
         private void btnTraders_Click(object sender, EventArgs e)
         {
-            
+            btnAmmo.Enabled = true;
+            btnFlea.Enabled = true;
+            btnTasks.Enabled = true;
+            btnTraders.Enabled = false;
+
+            hideAll();
+
+            this.pnlMain.Controls.Add(fTraders);
+            this.pnlMain.Tag = fTraders;
+            fTraders.Show();
         }
         private void btnAmmo_Click(object sender, EventArgs e)
         {
-            loadForm(new FormAmmo(), FormTab.Ammo);
+            btnAmmo.Enabled = false;
+            btnFlea.Enabled = true;
+            btnTasks.Enabled = true;
+            btnTraders.Enabled = true;
+
+            hideAll();
+
+            this.pnlMain.Controls.Add(fAmmo);
+            this.pnlMain.Tag = fAmmo;
+            fAmmo.Show();
+        }
+        private void btnTasks_Click(object sender, EventArgs e)
+        {
+            btnAmmo.Enabled = true;
+            btnFlea.Enabled = true;
+            btnTasks.Enabled = false;
+            btnTraders.Enabled = true;
+
+            hideAll();
+
+            this.pnlMain.Controls.Add(fTasks);
+            this.pnlMain.Tag = fTasks;
+            fTasks.Show();
+        }
+        private void btnFlea_Click(object sender, EventArgs e)
+        {
+            btnAmmo.Enabled = true;
+            btnFlea.Enabled = false;
+            btnTasks.Enabled = true;
+            btnTraders.Enabled = true;
+
+            hideAll();
+
+            this.pnlMain.Controls.Add(fFlea);
+            this.pnlMain.Tag = fFlea;
+            fFlea.Show();
         }
 
         public enum FormTab
@@ -86,59 +150,12 @@ namespace tarkovAmmo
         Form fTasks;
         Form fFlea;
 
-        Form f;
-        public void loadForm(object Form, FormTab ft)
+        private void hideAll()
         {
-            Form f = null;
-
-            switch (ft)
-            {
-                case FormTab.Traders:
-                    f = fTraders;
-                    break;
-                case FormTab.Ammo:
-                    f = fAmmo;
-                    break;
-                case FormTab.Tasks:
-                    f = fTasks;
-                    break;
-                case FormTab.Flea:
-                    f = fFlea;
-                    break;
-                default:
-                    break;
-            }
-
-            if (f == null)
-            {
-                if (this.pnlMain.Controls.Count > 0)
-                {
-                    this.pnlMain.Controls.RemoveAt(0);
-                }
-                f = Form as Form;
-                f.TopLevel = false;
-                f.Dock = DockStyle.Fill;
-                this.pnlMain.Controls.Add(f);
-                this.pnlMain.Tag = f;
-                f.Show();
-            }
-            else
-            { 
-                f.Show();
-            }
-        }
-
-        private void btnTasks_Click(object sender, EventArgs e)
-        {
-            loadForm(new FormTasks(), FormTab.Tasks);
-        }
-        private void btnFlea_Click(object sender, EventArgs e)
-        { 
-
-        }
-        private void roundedButtons1_Click(object sender, EventArgs e)
-        {
-            f.Hide();
+            fTraders.Hide();
+            fAmmo.Hide();
+            fTasks.Hide();
+            fFlea.Hide();
         }
     }
 }
