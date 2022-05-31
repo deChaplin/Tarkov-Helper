@@ -14,19 +14,6 @@
           "Microsoft.WindowsDesktop.App.WindowsForms"
         ]
       },
-      "MetroModernUI/1.4.0": {
-        "type": "package",
-        "compile": {
-          "lib/net/MetroFramework.Design.dll": {},
-          "lib/net/MetroFramework.Fonts.dll": {},
-          "lib/net/MetroFramework.dll": {}
-        },
-        "runtime": {
-          "lib/net/MetroFramework.Design.dll": {},
-          "lib/net/MetroFramework.Fonts.dll": {},
-          "lib/net/MetroFramework.dll": {}
-        }
-      },
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
@@ -54,20 +41,6 @@
         "materialskin.2.2.3.1.nupkg.sha512",
         "materialskin.2.nuspec",
         "nugetIcon.png"
-      ]
-    },
-    "MetroModernUI/1.4.0": {
-      "sha512": "p2F3w8bF1tb0tpkDceEVO65UYMKnJxdQyNxVyl/OjrFZHighicLYZDppKkiqmvBZ10XUi2mqHiIJUzXBP3GElQ==",
-      "type": "package",
-      "path": "metromodernui/1.4.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net/MetroFramework.Design.dll",
-        "lib/net/MetroFramework.Fonts.dll",
-        "lib/net/MetroFramework.dll",
-        "metromodernui.1.4.0.nupkg.sha512",
-        "metromodernui.nuspec"
       ]
     },
     "Newtonsoft.Json/13.0.1": {
@@ -101,28 +74,27 @@
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "MaterialSkin.2 >= 2.3.1",
-      "MetroModernUI >= 1.4.0",
       "Newtonsoft.Json >= 13.0.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ahmed Patel\\.nuget\\packages\\": {},
+    "C:\\Users\\kylec\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ahmed Patel\\Desktop\\Tarkov Helper\\Tarkov-Helper\\tarkovAmmo\\tarkovAmmo.csproj",
+      "projectUniqueName": "C:\\Users\\kylec\\OneDrive - University of South Wales\\Personal Projects\\1Github\\Tarkov-Helper\\tarkovAmmo\\tarkovAmmo.csproj",
       "projectName": "tarkovAmmo",
-      "projectPath": "C:\\Users\\Ahmed Patel\\Desktop\\Tarkov Helper\\Tarkov-Helper\\tarkovAmmo\\tarkovAmmo.csproj",
-      "packagesPath": "C:\\Users\\Ahmed Patel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ahmed Patel\\Desktop\\Tarkov Helper\\Tarkov-Helper\\tarkovAmmo\\obj\\",
+      "projectPath": "C:\\Users\\kylec\\OneDrive - University of South Wales\\Personal Projects\\1Github\\Tarkov-Helper\\tarkovAmmo\\tarkovAmmo.csproj",
+      "packagesPath": "C:\\Users\\kylec\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kylec\\OneDrive - University of South Wales\\Personal Projects\\1Github\\Tarkov-Helper\\tarkovAmmo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Ahmed Patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kylec\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -153,10 +125,6 @@
             "target": "Package",
             "version": "[2.3.1, )"
           },
-          "MetroModernUI": {
-            "target": "Package",
-            "version": "[1.4.0, )"
-          },
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.1, )"
@@ -180,20 +148,8 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'MetroModernUI 1.4.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "MetroModernUI",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    }
-  ]
+  }
 }
