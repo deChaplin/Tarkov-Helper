@@ -16,4 +16,12 @@ namespace tarkovAmmo
         public string name { get; set; }
         public string resetTimeStamp { get; set; }
     }
+
+    class traderUtils
+    {
+        public List<trader> getAllTraders()
+        {
+            return null;
+        }
+    }
 }

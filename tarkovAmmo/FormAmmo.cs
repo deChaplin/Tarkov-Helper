@@ -1,11 +1,4 @@
-﻿using System;
-using System.Net;
-using System.IO;
-using Newtonsoft.Json.Linq;
-
-using MaterialSkin;
-using MaterialSkin.Controls;
-using System.Runtime.InteropServices;
+﻿using MaterialSkin;
 
 namespace tarkovAmmo
 {
@@ -26,48 +19,15 @@ namespace tarkovAmmo
         }
 
         // Lists
-        List<string> allCalibers = new List<string>();
+        List<string> allCalibers;
         List<string> allAmmo = new List<string>();
-        List<round> rounds = new List<round>();
+        List<round> rounds;
 
         private void FormAmmo_Load(object sender, EventArgs e)
         {
-            string url = "https://eft-ammo.com/api/data";
-            JObject jsonObject = tarkovAmmo.utilities.GetJSONFromApiCall(url);
             resetForm();
-
-            foreach (var item in jsonObject)
-            {
-                JToken value = item.Value; // Value of "item"
-                JArray array = (JArray) value; // Turning JArray "item" into real JArray
-
-                allCalibers.Add(item.Key);  // Adding to the calibers list
-
-                // Populates the class
-                foreach (JObject item2 in array)
-                {
-                    // Create new round with given properties
-                    round round = new round(
-                        item2.GetValue("name").ToString(),
-                        item2.GetValue("damage").ToString(),
-                        item2.GetValue("penValue").ToString(),
-                        item2.GetValue("fragChange").ToString(),
-                        item2.GetValue("recoil").ToString(),
-                        item2.GetValue("effDist").ToString(),
-                        item2.GetValue("maxHsDist").ToString(),
-                        item2.GetValue("class1").ToString(),
-                        item2.GetValue("class2").ToString(),
-                        item2.GetValue("class3").ToString(),
-                        item2.GetValue("class4").ToString(),
-                        item2.GetValue("class5").ToString(),
-                        item2.GetValue("class6").ToString(),
-                        item2.GetValue("initialSpeed").ToString(),
-                        item2.GetValue("category").ToString()
-                    );
-
-                    rounds.Add(round);  // Adds the rounds to a list
-                }
-            }
+            allCalibers = AmmoUtils.getAllCalibers();
+            rounds = AmmoUtils.getAllRounds();
 
             foreach (String caliber in allCalibers)
             {
