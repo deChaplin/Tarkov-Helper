@@ -1,16 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System;
-using System.Net;
-using System.IO;
-using Newtonsoft.Json.Linq;
-
-using MaterialSkin;
-using MaterialSkin.Controls;
-using System.Runtime.InteropServices;
+﻿using Newtonsoft.Json.Linq;
 
 namespace tarkovAmmo
 {
@@ -55,21 +43,61 @@ namespace tarkovAmmo
         public string category { get; set; }
     }
 
-    class utilities
+    class AmmoUtils
     {
-        public static JObject GetJSONFromApiCall(string url)
+        public static List<string> getAllCalibers()
         {
-            string sURL = url;
+            List<string> calibers = new List<string>();
 
-            WebRequest wrGETURL = WebRequest.Create(sURL);
+            string url = "https://eft-ammo.com/api/data";
+            JObject jsonObject = Utils.GetJSONFromApiCall(url);
 
-            Stream objStream = wrGETURL.GetResponse().GetResponseStream();
+            foreach (var item in jsonObject)
+            {
+                calibers.Add(item.Key);
+            }
 
-            StreamReader objReader = new StreamReader(objStream);
+            return calibers;
+        }
+        // Double API call here.. not great but will fix eventually.
+        public static List<round> getAllRounds()
+        {
+            List<round> rounds = new List<round>();
 
-            string sLine = objReader.ReadLine();
+            string url = "https://eft-ammo.com/api/data";
+            JObject jsonObject = Utils.GetJSONFromApiCall(url);
 
-            return JObject.Parse(sLine);
+            foreach (var item in jsonObject)
+            {
+                JToken value = item.Value; // Value of "item"
+                JArray array = (JArray)value; // Turning JArray "item" into real JArray
+
+                // Populates the class
+                foreach (JObject item2 in array)
+                {
+                    // Create new round with given properties
+                    round round = new round(
+                        item2.GetValue("name").ToString(),
+                        item2.GetValue("damage").ToString(),
+                        item2.GetValue("penValue").ToString(),
+                        item2.GetValue("fragChange").ToString(),
+                        item2.GetValue("recoil").ToString(),
+                        item2.GetValue("effDist").ToString(),
+                        item2.GetValue("maxHsDist").ToString(),
+                        item2.GetValue("class1").ToString(),
+                        item2.GetValue("class2").ToString(),
+                        item2.GetValue("class3").ToString(),
+                        item2.GetValue("class4").ToString(),
+                        item2.GetValue("class5").ToString(),
+                        item2.GetValue("class6").ToString(),
+                        item2.GetValue("initialSpeed").ToString(),
+                        item2.GetValue("category").ToString()
+                    );
+
+                    rounds.Add(round);  // Adds the rounds to a list
+                }
+            }
+            return rounds; // Returns said list
         }
     }
 }
