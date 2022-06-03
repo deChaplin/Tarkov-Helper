@@ -26,6 +26,9 @@ namespace tarkovAmmo
         private void FormAmmo_Load(object sender, EventArgs e)
         {
             resetForm();
+
+            // Causes form freezing.
+            // To fix -> call these methods and store data elsewhere
             allCalibers = AmmoUtils.getAllCalibers();
             rounds = AmmoUtils.getAllRounds();
 

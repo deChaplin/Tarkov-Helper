@@ -1,5 +1,4 @@
-﻿using System.Net;
-using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json.Linq;
 
 namespace tarkovAmmo
 {
@@ -46,27 +45,12 @@ namespace tarkovAmmo
 
     class AmmoUtils
     {
-        public static JObject GetJSONFromApiCall(string url)
-        {
-            string sURL = url;
-
-            WebRequest wrGETURL = WebRequest.Create(sURL);
-
-            Stream objStream = wrGETURL.GetResponse().GetResponseStream();
-
-            StreamReader objReader = new StreamReader(objStream);
-
-            string sLine = objReader.ReadLine();
-
-            return JObject.Parse(sLine);
-        }
-
         public static List<string> getAllCalibers()
         {
             List<string> calibers = new List<string>();
 
             string url = "https://eft-ammo.com/api/data";
-            JObject jsonObject = tarkovAmmo.AmmoUtils.GetJSONFromApiCall(url);
+            JObject jsonObject = Utils.GetJSONFromApiCall(url);
 
             foreach (var item in jsonObject)
             {
@@ -81,7 +65,7 @@ namespace tarkovAmmo
             List<round> rounds = new List<round>();
 
             string url = "https://eft-ammo.com/api/data";
-            JObject jsonObject = tarkovAmmo.AmmoUtils.GetJSONFromApiCall(url);
+            JObject jsonObject = Utils.GetJSONFromApiCall(url);
 
             foreach (var item in jsonObject)
             {
