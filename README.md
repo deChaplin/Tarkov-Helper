@@ -1,5 +1,7 @@
 # Tarkov-Helper
 
+Work in progress version is on the "testing" branch.
+
 # Unlikely to get updates
 
 A basic application written in C# that will display information on the caliber and round type selected. This was created for myself and my friend group as it was sometimes difficult to quickly find information using massive graphs.
@@ -11,7 +13,3 @@ A basic application written in C# that will display information on the caliber a
 
 # Ammo helper
 - Allows you to select the caliber and then round to see the information for said round.
-
-
-
-
